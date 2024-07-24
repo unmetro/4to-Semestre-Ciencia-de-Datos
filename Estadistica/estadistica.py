@@ -1,0 +1,1 @@
+print("Estadistica, lo mas seguro puros apuntes y examenes")
