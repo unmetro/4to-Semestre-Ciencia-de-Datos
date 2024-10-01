@@ -1,0 +1,33 @@
+/*Programa Hola Mundo en CUDA
+  Autor: Benjamin Cruz
+  Fecha: 27 de abril de 2021   
+
+  Programa que imprime hola mundo en paralelo, 
+  lo imprime tanto en el host como en el device. 
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <cuda_runtime.h>
+
+//Función a ejecutar en la GPU
+__global__ void hola(void)
+{
+     printf("Hola mundo desde el GPU\n");
+}
+
+
+
+int main(int argc, char** argv)
+{
+
+//Este código va a correr en la CPU
+printf("Hola mundo desde el CPU\n\n");
+
+hola<<<1,1>>>();
+
+printf("\nPulsa INTRO para finalizar...");
+char tecla = getchar();
+return 0;
+
+}
