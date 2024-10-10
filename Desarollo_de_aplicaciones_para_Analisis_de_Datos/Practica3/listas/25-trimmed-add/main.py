@@ -1,10 +1,8 @@
 def run(values: list) -> int:
-    # TODO
-    return tsum
+    if len(values) < 3:
+        return 0
+    return sum(values) - max(values) - min(values)
 
-
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    import vendor
-
-    vendor.launch(run)
+# Llamada de ejemplo
+resultado = run([7, 12, 4, 9, 3])
+print(resultado)

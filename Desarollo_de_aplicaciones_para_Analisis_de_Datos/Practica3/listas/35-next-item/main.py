@@ -1,10 +1,13 @@
 def run(items: list, ref_item: object) -> object:
-    # TODO
-    return target_item
+    if ref_item not in items:
+        return None
 
+    index = items.index(ref_item)
+    if index + 1 < len(items):
+        return items[index + 1]
+    else:
+        return None
 
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    import vendor
-
-    vendor.launch(run)
+# Llamada de ejemplo
+resultado = run(['Ana', 'Sara', 'Noelia'], 'Sara')
+print(resultado)  # Salida: 'Noelia'

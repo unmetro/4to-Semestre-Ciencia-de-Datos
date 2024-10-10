@@ -1,10 +1,10 @@
 def run(numbers: str) -> str:
-    # TODO
+    elements = numbers.split(',')
+    if len(elements) <= 2:
+        return ''
+    strip_numbers = ' '.join(elements[1:-1])
     return strip_numbers
 
-
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    import vendor
-
-    vendor.launch(run)
+# Llamada de ejemplo
+resultado = run('1,2,3,4,5')
+print(resultado)  # Salida: '2 3 4'

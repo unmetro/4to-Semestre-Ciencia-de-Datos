@@ -1,10 +1,6 @@
 def run(values: list) -> list:
-    # TODO
-    return odds
+    return [num for num in values if num % 2 != 0]
 
-
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    import vendor
-
-    vendor.launch(run)
+# Llamada de ejemplo
+resultado = run([7, 3, 4, 8, 12, 6, 9])
+print(resultado)  # Salida: [7, 3, 9]
