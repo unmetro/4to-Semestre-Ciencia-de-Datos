@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno+)>
+    <!ELEMENT alumno (CURP, nombre, historiaAcademica)>
+    <!ELEMENT CURP (#PCDATA)>
+    <!ELEMENT nombre (apellidoPaterno, apellidoMaterno, nombres)>
+    <!ELEMENT apellidoPaterno (#PCDATA)>
+    <!ELEMENT apellidoMaterno (#PCDATA)>
+    <!ELEMENT nombres (#PCDATA)>
+    <!ELEMENT historiaAcademica (asignatura*)>
+    <!ELEMENT asignatura (nombreAsignatura, calificacion, fechaAcreditacion, tipoExamen)>
+    <!ELEMENT nombreAsignatura (#PCDATA)>
+    <!ELEMENT calificacion (#PCDATA)>
+    <!ELEMENT fechaAcreditacion (#PCDATA)>
+    <!ELEMENT tipoExamen (#PCDATA)>
+]>
+<alumnos>
+    <alumno>
+        <CURP>ABCD123456HDEFGR01</CURP>
+        <nombre>
+            <apellidoPaterno>García</apellidoPaterno>
+            <apellidoMaterno>Martínez</apellidoMaterno>
+            <nombres>Juan Carlos</nombres>
+        </nombre>
+        <historiaAcademica>
+            <asignatura>
+                <nombreAsignatura>Matemáticas</nombreAsignatura>
+                <calificacion>9</calificacion>
+                <fechaAcreditacion>12/07/2023</fechaAcreditacion>
+                <tipoExamen>Ordinario</tipoExamen>
+            </asignatura>
+            <asignatura>
+                <nombreAsignatura>Historia</nombreAsignatura>
+                <calificacion>8</calificacion>
+                <fechaAcreditacion>15/07/2023</fechaAcreditacion>
+                <tipoExamen>Extraordinario</tipoExamen>
+            </asignatura>
+        </historiaAcademica>
+    </alumno>
+
+    <alumno>
+        <CURP>EFGH234567LDMNOP02</CURP>
+        <nombre>
+            <apellidoPaterno>López</apellidoPaterno>
+            <apellidoMaterno>González</apellidoMaterno>
+            <nombres>Ana María</nombres>
+        </nombre>
+        <historiaAcademica>
+            <asignatura>
+                <nombreAsignatura>Biología</nombreAsignatura>
+                <calificacion>10</calificacion>
+                <fechaAcreditacion>10/07/2023</fechaAcreditacion>
+                <tipoExamen>Ordinario</tipoExamen>
+            </asignatura>
+        </historiaAcademica>
+    </alumno>
+</alumnos>

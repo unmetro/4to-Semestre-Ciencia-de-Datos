@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE numeros [
-    <!ELEMENT numeros (numero+)>
-    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT numeros (numero)> <!-- Se corrige la estructura: antes decia que 'numeros' solo texto (#PCDATA), pero dentro tiene elementos numero.-->
 ]>
 <numeros>
     <numero>25</numero>
-    <numero>50</numero>
-    <numero>75</numero>
 </numeros>
-<p><a href="ejerciciosDTD.html">Volver a la Página Principal</a></p>
 
