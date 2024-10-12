@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="alumnos.xsl"?>
+<!DOCTYPE alumnos SYSTEM "ejercicio2.dtd">
+<alumnos>
+    <alumno>
+        <CURP>AACM123456HDFRR01</CURP>
+        <nombre>
+            <apellidoPaterno>Alvarez</apellidoPaterno>
+            <apellidoMaterno>Castro</apellidoMaterno>
+            <nombres>Maria Antonieta</nombres>
+        </nombre>
+        <historiaAcademica>
+            <asignatura>
+                <nombre>Matemáticas</nombre>
+                <calificacion>9.5</calificacion>
+                <fechaAcreditacion>2023-06-15</fechaAcreditacion>
+                <tipoExamen>Ordinario</tipoExamen>
+            </asignatura>
+            <asignatura>
+                <nombre>Español</nombre>
+                <calificacion>8.0</calificacion>
+                <fechaAcreditacion>2023-05-30</fechaAcreditacion>
+                <tipoExamen>Extraordinario</tipoExamen>
+            </asignatura>
+        </historiaAcademica>
+    </alumno>
+
+    <alumno>
+        <CURP>BBCP789012MDFRR02</CURP>
+        <nombre>
+            <apellidoPaterno>Bravo</apellidoPaterno>
+            <apellidoMaterno>Contreras</apellidoMaterno>
+            <nombres>Pablo César</nombres>
+        </nombre>
+        <historiaAcademica>
+            <asignatura>
+                <nombre>Historia</nombre>
+                <calificacion>7.8</calificacion>
+                <fechaAcreditacion>2023-06-18</fechaAcreditacion>
+                <tipoExamen>Ordinario</tipoExamen>
+            </asignatura>
+        </historiaAcademica>
+    </alumno>
+</alumnos>

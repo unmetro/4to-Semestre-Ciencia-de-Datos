@@ -1,0 +1,13 @@
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (CURP, nombre, historiaAcademica)>
+<!ELEMENT CURP (#PCDATA)>
+<!ELEMENT nombre (apellidoPaterno, apellidoMaterno, nombres)>
+<!ELEMENT apellidoPaterno (#PCDATA)>
+<!ELEMENT apellidoMaterno (#PCDATA)>
+<!ELEMENT nombres (#PCDATA)>
+<!ELEMENT historiaAcademica (asignatura*)>
+<!ELEMENT asignatura (nombre, calificacion, fechaAcreditacion, tipoExamen)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT calificacion (#PCDATA)>
+<!ELEMENT fechaAcreditacion (#PCDATA)>
+<!ELEMENT tipoExamen (#PCDATA)>
