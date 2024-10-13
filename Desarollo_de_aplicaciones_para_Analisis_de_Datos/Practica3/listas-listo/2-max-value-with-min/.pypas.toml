@@ -1,0 +1,3 @@
+slug = "max-value-with-min"
+bundle = [ "docs/README.pdf", "tests/*.py", "main.py", "vendor.py",]
+todo = [ "main.py",]
