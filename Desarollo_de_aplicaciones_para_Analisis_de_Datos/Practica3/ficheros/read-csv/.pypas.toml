@@ -1,3 +1,0 @@
-slug = "read-csv"
-bundle = ["docs/README.pdf", "tests/*.py", "main.py", "vendor.py", "data/*.csv"]
-todo = ["main.py"]

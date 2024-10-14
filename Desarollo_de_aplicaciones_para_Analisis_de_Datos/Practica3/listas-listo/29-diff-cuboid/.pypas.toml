@@ -1,3 +1,0 @@
-slug = "diff-cuboid"
-bundle = [ "docs/README.pdf", "tests/*.py", "main.py", "vendor.py",]
-todo = [ "main.py",]

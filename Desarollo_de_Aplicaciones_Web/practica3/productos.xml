@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos SYSTEM "productos.dtd">
+<?xml-stylesheet type="text/xsl" href="productos.xsl"?>
+<productos>
+    <producto>
+        <nombre>Hierva para gato</nombre>
+        <precio>300</precio>
+        <descripcion>conocida como catnip (nombre científico: Nepeta cataria), es una planta que tiene un efecto estimulante en la mayoría de los gatos. Contiene un compuesto llamado nepetalactona, que interactúa con los receptores del olfato de los gatos y puede provocar una variedad de reacciones, como euforia, hiperactividad, o relajación.</descripcion>
+        <imagen>hierva.jpg</imagen>
+    </producto>
+    <producto>
+        <nombre>Tortuga de Orejas Rojas</nombre>
+        <precio>50</precio>
+        <descripcion>El calcio es un nutriente esencial para las tortugas, especialmente para aquellas que tienen un caparazón duro.
+             El calcio es crucial para la formación y el mantenimiento de un caparazón sano y fuerte. Ayuda a prevenir deformidades y enfermedades metabólicas </descripcion>
+        <imagen>calcio.jpg</imagen>
+    </producto>
+</productos>

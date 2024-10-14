@@ -1,3 +1,0 @@
-slug = "word-freq"
-bundle = ["docs/README.pdf", "tests/*.py", "main.py", "vendor.py", "data/*.txt"]
-todo = ["main.py"]

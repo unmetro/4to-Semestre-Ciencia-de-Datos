@@ -1,3 +1,0 @@
-slug = "order-stock"
-bundle = [ "docs/README.pdf", "tests/*.py", "main.py", "vendor.py",]
-todo = [ "main.py",]

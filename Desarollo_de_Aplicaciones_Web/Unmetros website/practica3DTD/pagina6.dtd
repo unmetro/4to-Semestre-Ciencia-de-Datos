@@ -1,0 +1,3 @@
+<!ELEMENT pagina6 (gato, descripcion)>
+<!ELEMENT gato (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
