@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paginas SYSTEM "pagina-web.dtd">
+<paginas>
+    <pagina>
+        <titulo>Página 1 - ¿Quién soy yo?</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>HOLAAAAAAA, MIREN SOY YO, Me llamo E%##$%"=?...</contenido>
+    </pagina>
+    <pagina>
+        <titulo>Página 2 - Mascota 1</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>Holaaa me llamo Mona...</contenido>
+    </pagina>
+    <pagina>
+        <titulo>Página 3 - Mascota 2</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>Yo me llamo Luna...</contenido>
+    </pagina>
+    <pagina>
+        <titulo>Página 4 - Mi show favorito</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>Mob psycho 100...</contenido>
+    </pagina>
+    <pagina>
+        <titulo>Página 5 - Mi película favorita</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>Blade runner 2049...</contenido>
+    </pagina>
+    <pagina>
+        <titulo>Página 6 - Ya no sé</titulo>
+        <seccion>Descripción</seccion>
+        <contenido>Ya no supe que más hacer así que aquí está un meme de un gato...</contenido>
+    </pagina>
+</paginas>

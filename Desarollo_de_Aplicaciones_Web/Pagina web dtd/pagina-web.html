@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido de Páginas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contenido de las Páginas</h1>
+    </header>
+
+    <section id="paginas">
+        <!-- Los datos del XML se mostrarán aquí -->
+    </section>
+
+    <script>
+        fetch('pagina-web.xml')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(data, 'application/xml');
+                const paginas = xml.getElementsByTagName('pagina');
+                let html = '';
+                for (let i = 0; i < paginas.length; i++) {
+                    const titulo = paginas[i].getElementsByTagName('titulo')[0].textContent;
+                    const seccion = paginas[i].getElementsByTagName('seccion')[0].textContent;
+                    const contenido = paginas[i].getElementsByTagName('contenido')[0].textContent;
+                    html += `<h2>${titulo}</h2>
+                             <p><strong>${seccion}:</strong> ${contenido}</p>`;
+                }
+                document.getElementById('paginas').innerHTML = html;
+            });
+    </script>
+</body>
+</html>

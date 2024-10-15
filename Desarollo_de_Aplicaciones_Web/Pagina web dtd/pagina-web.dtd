@@ -1,0 +1,5 @@
+<!ELEMENT paginas (pagina+)>
+<!ELEMENT pagina (titulo, seccion+, contenido)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT seccion (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
