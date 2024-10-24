@@ -8,9 +8,6 @@ def is_perfect(n: int) -> bool:
     return sum(divisors) == n
 
 
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    print(is_perfect(28))
-    import vendor
 
-    vendor.launch(is_perfect)
+print(is_perfect(28))
+

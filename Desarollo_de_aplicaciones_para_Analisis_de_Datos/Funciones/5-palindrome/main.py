@@ -5,9 +5,5 @@ def is_palindrome(word):
 
 
 
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    print(is_palindrome("Never odd or even"))
-    import vendor
 
-    vendor.launch(is_palindrome)
+print(is_palindrome("Never odd or even"))

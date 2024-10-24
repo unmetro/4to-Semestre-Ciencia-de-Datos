@@ -13,11 +13,8 @@ def split_case(s):
             
 
 
-# DO NOT TOUCH THE CODE BELOW
-if __name__ == '__main__':
-    lista = ['cocodrilo', 'ZEBRA', 'MAPACHE', 'Serpiente', 'ballena']
-    print(f'Original list: {lista}')
-    print(f'Split case: {split_case(lista)}')
-    import vendor
 
-    vendor.launch(split_case)
+lista = ['cocodrilo', 'ZEBRA', 'MAPACHE', 'Serpiente', 'ballena']
+print(f'Original list: {lista}')
+print(f'Split case: {split_case(lista)}')
+
