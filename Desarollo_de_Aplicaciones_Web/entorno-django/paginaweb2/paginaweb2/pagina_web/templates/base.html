@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Sitio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v={{timestamp}}">
+</head>
+<body>
+    <header>
+        <h1>Mi Primer Sitio Web :D</h1>
+        <p><strong>Bienvenido a mi sitio web con django</strong></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'about' %}">Página 1</a></li>
+            <li><a href="{% url 'mona' %}">Página 2</a></li>
+            <li><a href="{% url 'luna' %}">Página 3</a></li>
+            <li><a href="{% url 'blade' %}">Página 4</a></li>
+            <li><a href="{% url 'mob' %}">Página 5</a></li>
+            <li><a href="{% url 'frieren' %}">Página 6</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Unmetro</p>
+    </footer>
+</body>
+</html>
