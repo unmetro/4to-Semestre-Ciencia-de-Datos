@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Detalles del Producto{% endblock %}
+{% block content %}
+    <h1 class="mb-4">Detalles del Producto</h1>
+    <p><strong>Nombre:</strong> {{ producto.nombre }}</p>
+    <p><strong>Descripción:</strong> {{ producto.descripcion }}</p>
+    <p><strong>Precio:</strong> {{ producto.precio }}</p>
+    <p><strong>Disponible:</strong> {{ producto.disponible }}</p>
+    <a href="{% url 'listar' %}" class="btn btn-primary">Volver a la lista</a>
+{% endblock %}

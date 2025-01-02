@@ -1,2 +1,18 @@
-{% for var in variable%}
-    <li>{{var.[attr]}}</li>
+{% extends 'base.html' %}
+{% block title %}Lista de Productos{% endblock %}
+{% block content %}
+    <h1 class="mb-4">Lista de Productos</h1>
+    <a href="{% url 'crear' %}" class="btn btn-primary mb-3">Crear nuevo producto</a>
+    <ul class="list-group">
+        {% for producto in productos %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ producto.nombre }}
+                <div>
+                    <a href="{% url 'detalles' producto.id %}" class="btn btn-info btn-sm">Detalles</a>
+                    <a href="{% url 'actualizar' producto.id %}" class="btn btn-warning btn-sm">Actualizar</a>
+                    <a href="{% url 'borrar' producto.id %}" class="btn btn-danger btn-sm">Borrar</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

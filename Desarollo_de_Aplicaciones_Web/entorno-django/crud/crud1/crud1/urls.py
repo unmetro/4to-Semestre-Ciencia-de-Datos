@@ -20,9 +20,10 @@ from crud2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.inicio, name='inicio'),  # Página principal
     path('listar/', views.listar, name='listar'),
-    path('detalles/', views.detalles, name='detalles'),
+    path('detalles/<int:id>/', views.detalles, name='detalles'),
     path('crear/', views.crear, name='crear'),
-    path('borrar',views.borrar, name='borrar'),
-    path('actualizar/', views.actualizar, name='actualizar'),
+    path('borrar/<int:id>/', views.borrar, name='borrar'),
+    path('actualizar/<int:id>/', views.actualizar, name='actualizar'),
 ]
